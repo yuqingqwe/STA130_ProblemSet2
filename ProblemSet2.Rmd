@@ -1,0 +1,187 @@
+---
+title: "STA130H1S -- Fall 2022"
+author: "<Student Name> (<Student Number>) and STA130 Professors"
+subtitle: Problem Set 2
+urlcolor: blue
+output:
+  pdf_document: default
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(eval=TRUE, include=TRUE, echo=TRUE, message=TRUE, warning=FALSE)
+```
+
+# Instructions
+
+Complete the excercises in this .Rmd file and submit your .Rmd and .pdf output through [Quercus](https://q.utoronto.ca/courses/253019/assignments/782402) on September 22 by 5:00 p.m. ET. 
+
+## Question 1
+
+The Week 1 Problem Set included the following code.
+
+```{r, eval=FALSE, echo=TRUE}
+my_answers <- c(r1,r2,c1,c2)
+square_answers <- c(10,-1,3,12)
+```
+
+For the first three questions below choose the correct answer from the following.
+
+(A) A single value counting how many correct rows and columns you calculated.
+(B) A numeric vector of the differences between the math square answers and your answers (should be all 0s if you got them all right).
+(C) A character vector of 'TRUE' and 'FALSE', 'TRUE' for each answer that matches and 'FALSE' for any that don't.
+(D) A logical vector of `TRUE` and `FALSE`, `TRUE` for each answer that matches and `FALSE` for any that don't.
+(E) A single logical value `TRUE` or `FALSE`, `TRUE` if all the values match, `FALSE` if any of the values don't match.
+
+
+### a) Which of the above best describes what `my_answers == square_answers` is?
+
+### b) Which of the above best describes what `sum(my_answers == square_answers)` is?
+
+### c) Which of the above best describes what `all(my_answers == square_answers)` is?
+
+### d) What is the sequence of steps involved in getting the answer for `sum(c(TRUE,FALSE))`? What additional step is required to get the answer for `sum(my_answers == square_answers)`?
+
+*REPLACE THIS TEXT WITH YOUR ANSWER*
+
+#### Hints
+- Your answer should include the word ***coercion***.
+- The `sum` function works only on `numeric` data types and does not itself directly know anything about `logical` data types.
+
+## Question 2
+
+The data for this question will be based on a sample of Superbowl ads.
+
+- The data is stored in the file `superbowl_ads.csv` in the same directory as this file,
+and includes the following variables:
+
+  - `year` (double) Superbowl year
+  - `brand`	(character)	Brand for commercial
+  - `funny`	(logical)	Contains humor
+  - `show_product_quickly`	(logical))	Shows product quickly
+  - `celebrity`	(logical) Contains celebrity
+  - `danger`	(logical)	Contains danger
+  - `view_count`	(double)	Youtube view count
+  - `like_count`	(double)	Youtube like count
+  - `dislike_count`	(double)	Youtube dislike count
+  - `superbowl_ads_dot_com_url`	(character)	Superbowl ad URL
+ 
+> This data was posted on [github](https://github.com/fivethirtyeight/superbowl-ads#super-bowl-ads) by the data-oriented reporting outlet [FiveThirtyEight](https://github.com/fivethirtyeight) and subsequently featured on [Tidy Tuesday](https://github.com/rfordatascience/tidytuesday/blob/master/data/2021/2021-03-02/readme.md).  For more information see the above links.
+
+```{r, message=FALSE}
+library(tidyverse) # Load the tidyverse functionality so it is available to use 
+superbowl <- read_csv("superbowl_ads.csv")
+```
+
+### (a) Use the `glimpse()` function to view properties of the `superbowl` data set. How many rows and columns are there? How many observations does it include? How many variables are measured for each observation? 
+
+```{r}
+
+```
+
+*REPLACE THIS TEXT WITH YOUR ANSWER*
+
+### (b) Create 3 histograms to explore the distribution of `view_count` at the same time: (i) one with 2 bins, (ii) one with 8 bins, and (iii) one with 50 bins; make sure to specify meaningful axis labels where appropriate. Which of these histograms is most appropriate to describe the distribution of the average number of players at the same time? Why? Write a few sentences describing the distribution based on the histogram you chose as most appropriate.
+
+```{r}
+# You can put multiple plots in the same code chunk
+
+```
+
+```{r}
+# Or your can put different plots in separate code chunks
+
+```
+
+```{r}
+# Feel free to add or remove code chunks as desired
+
+```
+
+
+*REPLACE THIS TEXT WITH YOUR ANSWER*
+
+### (c) Construct two plots to visualize the distribution of `brand` and one of these other categorical variables:  `funny`, `danger` or `celebrity` from the superbowl ads data and describe the distribution in 1-2 sentences; make sure to specify meaningful axis labels where appropriate. Hint: If you choose a categorical variable with many different categories, you may find it useful to use `coord_flip()` to flip the bars horizontally and/or change the options in the R code chunk to make the plot large (ex: {r, fig.height=15, fig.width=5}).
+
+```{r, message=FALSE, fig.height=3, fig.width=4, fig.align='center'}
+# One reason to use use different code chunks for different figures is
+# to assign different figure aspect ratio controls to different figure
+
+```
+
+*REPLACE THIS TEXT WITH YOUR ANSWER*
+
+### (d) Construct a set of two boxplots showing visual summaries of the distribution of number of likes (`like_count`) for whether ads included a celebrity or not (`celebrity`); make sure to specify meaningful axis labels where appropriate. Write 3-4 sentences comparing these distributions.
+
+```{r}
+# This should be a single plot, NOT TWO... boxplots can be put in the same plot!
+
+```
+
+*REPLACE THIS TEXT WITH YOUR ANSWER*
+
+## Question 3
+
+The `births` data set is part of the `openintro` package. It consists of random sample of 100 births for babies in North Carolina where the mother was not a smoker and another 50 where the mother was a smoker.   Type `?births` in the R console for more information about the data and to see the definition of each variable. The code below loads the required libraries for this question and provides a glimpse of the `births` data frame.
+
+```{r, echo=FALSE}
+library(tidyverse)
+library(openintro)
+```
+
+```{r}
+glimpse(births)
+```
+  
+### (a) Choose two categorical variables and plot the distribution of each one (in seperate plots). Identify whether each of these variables is a nominal or ordinal categorical variable. Write one or two sentences interpreting each plot.  
+
+```{r, message=FALSE, fig.height=3, fig.width=4, fig.align='center'}
+
+```
+
+*REPLACE THIS TEXT WITH YOUR ANSWER*
+
+### (b) Choose a quantitative variable and plot its distribution.  Identify whether the variable you selected is continuous or discrete, and write 2-3 sentences describing the distribution.
+
+```{r, message=FALSE, fig.width=3, fig.height=4, fig.align='center'}
+
+```
+
+*REPLACE THIS TEXT WITH YOUR ANSWER*
+
+### (c) Construct a plot that shows the relationship between birth weight (`weight`) and mother's smoking status (`smoke`); make sure to specify meaningful axis labels where appropriate.  
+
+```{r, message=FALSE, fig.width=3, fig.height=4, fig.align='center'}
+# To figure out how to do this google "ggplot2 scatter plot", or check out 
+# - https://ggplot2.tidyverse.org/#usage
+#   - https://ggplot2.tidyverse.org/#cheatsheet 
+#   - https://github.com/rstudio/cheatsheets/blob/main/data-visualization-2.1.pdf
+```
+
+\newpage
+
+# Additional Recommended Study Material
+
+Did you finish quickly?  Do you still have an unused course study time allocation? Would you like to cover this material a little bit more?  
+
+## ggplot2
+
+- [Official Cheatsheet](https://github.com/rstudio/cheatsheets/blob/main/data-visualization-2.1.pdf)
+  - [Finding Answers](https://ggplot2.tidyverse.org/#getting-help)
+- [Learning Resources](https://ggplot2.tidyverse.org/#learning-ggplot2)
+  - [Official Usage](https://ggplot2.tidyverse.org/#usage)
+  - [R4DS Textbook](https://r4ds.had.co.nz/data-visualisation.html)
+  - [DoSS Toolkit](https://dosstoolkit.com/#to-ggplot-or-not-to-ggplot)
+
+## Markdown
+
+Markdown supports efficiency and productivity, and it's needed for our class.
+
+  - [RStudio Markdown Cheatsheet](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)  
+    - [R4DS Introduction](https://r4ds.had.co.nz/r-markdown.html)
+    - [RStudio Introduction](https://rmarkdown.rstudio.com/)
+  - [Markdown Tutorial](https://www.markdowntutorial.com/)
+  
+## For Reference Only: ***NOT a Reading Recommendation***
+- [knitr Documentation](https://yihui.org/knitr/) 
+- [.Rmd Documentation](https://bookdown.org/yihui/rmarkdown/)
+  
