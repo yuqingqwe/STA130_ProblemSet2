@@ -13,7 +13,7 @@ knitr::opts_chunk$set(eval=TRUE, include=TRUE, echo=TRUE, message=TRUE, warning=
 
 # Instructions
 
-Complete the exercises in this .Rmd file and submit your .Rmd and .pdf output through [Quercus](https://q.utoronto.ca/courses/253019/assignments/782402) on September 22 by 5:00 p.m. ET. 
+Complete the exercises in this .Rmd file and submit your .Rmd and .pdf output through [Quercus](https://q.utoronto.ca/courses/277998/assignments/910603) on September 22 by 5:00 p.m. ET. 
 
 ## Question 1
 
