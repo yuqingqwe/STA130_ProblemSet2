@@ -162,6 +162,15 @@ births %>% glimpse()
 
 ### (d) Construct a plot that shows the relationship between birth weight (`weight`) and gestational age (`weeks`); make sure to specify meaningful axis labels where appropriate.  
 
+```{r, message=FALSE, fig.width=3, fig.height=4, fig.align='center'}
+# To figure out how to do this google "ggplot2 scatter plot", or check out 
+# - https://ggplot2.tidyverse.org/#usage
+#   - https://ggplot2.tidyverse.org/#cheatsheet 
+#   - https://github.com/rstudio/cheatsheets/blob/main/data-visualization-2.1.pdf
+
+```
+
+
 \newpage
 
 # Additional Recommended Study Material
