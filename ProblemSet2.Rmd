@@ -13,7 +13,7 @@ knitr::opts_chunk$set(eval=TRUE, include=TRUE, echo=TRUE, message=TRUE, warning=
 
 # Instructions
 
-Complete the excercises in this .Rmd file and submit your .Rmd and .pdf output through [Quercus](https://q.utoronto.ca/courses/253019/assignments/782402) on September 22 by 5:00 p.m. ET. 
+Complete the exercises in this .Rmd file and submit your .Rmd and .pdf output through [Quercus](https://q.utoronto.ca/courses/253019/assignments/782402) on September 22 by 5:00 p.m. ET. 
 
 ## Question 1
 
@@ -35,9 +35,15 @@ For the first three questions below choose the correct answer from the following
 
 ### a) Which of the above best describes what `my_answers == square_answers` is?
 
+*REPLACE THIS TEXT WITH YOUR ANSWER*
+
 ### b) Which of the above best describes what `sum(my_answers == square_answers)` is?
 
+*REPLACE THIS TEXT WITH YOUR ANSWER*
+
 ### c) Which of the above best describes what `all(my_answers == square_answers)` is?
+
+*REPLACE THIS TEXT WITH YOUR ANSWER*
 
 ### d) What is the sequence of steps involved in getting the answer for `sum(c(TRUE,FALSE))`? What additional step is required to get the answer for `sum(my_answers == square_answers)`?
 
@@ -129,7 +135,7 @@ library(openintro)
 ```
 
 ```{r}
-glimpse(births)
+births %>% glimpse()
 ```
   
 ### (a) Choose two categorical variables and plot the distribution of each one (in seperate plots). Identify whether each of these variables is a nominal or ordinal categorical variable. Write one or two sentences interpreting each plot.  
@@ -151,11 +157,10 @@ glimpse(births)
 ### (c) Construct a plot that shows the relationship between birth weight (`weight`) and mother's smoking status (`smoke`); make sure to specify meaningful axis labels where appropriate.  
 
 ```{r, message=FALSE, fig.width=3, fig.height=4, fig.align='center'}
-# To figure out how to do this google "ggplot2 scatter plot", or check out 
-# - https://ggplot2.tidyverse.org/#usage
-#   - https://ggplot2.tidyverse.org/#cheatsheet 
-#   - https://github.com/rstudio/cheatsheets/blob/main/data-visualization-2.1.pdf
+
 ```
+
+### (d) Construct a plot that shows the relationship between birth weight (`weight`) and gestational age (`weeks`); make sure to specify meaningful axis labels where appropriate.  
 
 \newpage
 
