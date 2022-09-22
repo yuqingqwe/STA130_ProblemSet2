@@ -35,19 +35,19 @@ For the first three questions below choose the correct answer from the following
 
 ### a) Which of the above best describes what `my_answers == square_answers` is?
 
-*REPLACE THIS TEXT WITH YOUR ANSWER*
+C
 
 ### b) Which of the above best describes what `sum(my_answers == square_answers)` is?
 
-*REPLACE THIS TEXT WITH YOUR ANSWER*
+B
 
 ### c) Which of the above best describes what `all(my_answers == square_answers)` is?
 
-*REPLACE THIS TEXT WITH YOUR ANSWER*
+E
 
 ### d) What is the sequence of steps involved in getting the answer for `sum(c(TRUE,FALSE))`? What additional step is required to get the answer for `sum(my_answers == square_answers)`?
 
-*REPLACE THIS TEXT WITH YOUR ANSWER*
+Firstly using 'spec()' to retrieve the full column specification for this data and then specify the column types or set 'show_col_types = FALSE' to quiet this message.
 
 #### Hints
 - Your answer should include the word ***coercion***.
